@@ -1,0 +1,329 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    overflow: scroll;
+
+
+}
+::-webkit-scrollbar {
+    width: 15px;
+  }
+  
+  
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+ 
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  
+}
+
+ 
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+ 
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+ 
+
+.topnav .icon {
+  display: none;
+}
+
+
+
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 80vh;
+    
+
+}
+  
+
+.box1{
+    width: 50%;
+    height: 40vh;
+    padding: 30px;
+    margin: 20px;
+    
+}
+.container .box1 a{
+  width: 90%;
+  height: 20px;
+  background-color: #f1f1f1;
+  text-decoration: none;
+  margin: 10px;
+  text-align: center;
+  border-radius: 5px; 
+    
+}
+
+.box2{
+
+    width: 20%;
+    height: 40vh;
+    border-radius: 50px;
+    padding: 40px;
+    margin: 40px;
+
+}
+
+ 
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+ 
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+.aboutMe{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 80vh;
+    
+}
+.aboutMe .heading{
+
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 30px;
+    margin: 20px;
+
+}
+.aboutMe .box1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+    
+} 
+.box1 ul{
+    display: flex;
+    flex-direction: column;
+    
+}
+.box1 .codLang{
+    display: flex;
+    flex-direction: column;
+
+    
+}
+.contactUs{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    width: 100%;
+    height: 80vh;
+    
+}
+.contactUs .heading{
+    font-family:'Fredericka the Great', cursive;
+    font-size: 30px;
+}
+
+.contactUs .Box1{
+    display: flex;
+    justify-content:space-between;
+    flex-direction: column;
+    align-items: center;
+    height: 50vh;
+    width: 100%;
+    padding: 30px;
+    
+}
+.Box1 .i{
+    font-size: 20px;
+}
+.button div{
+    display: block;
+}
+.projects{
+    display: flex;
+    width: 100%;
+    height: 80vh;
+    flex-direction: column;
+}
+
+.projects .heading{
+    font-family:'Fredericka the Great', cursive;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    
+
+}
+.containerProjects{
+  
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 80vh;
+  flex-direction: row;
+  flex-wrap: wrap;
+  overflow: scroll;
+  justify-content: center;
+}
+.containerProjects .projectBox{
+  background-color: red;
+  flex-direction: column;
+  display: flex;
+  height: 400px;
+  width: 300px;
+  margin: 20px;
+
+}
+.projectBox .ProjImg{
+  background-color: #04AA6D;
+  display: flex;
+  width: 100%;
+  height: 50%;
+}
+.projectBox .ProjImg img{
+  width: 100%;
+  height: 100%;
+}
+.projectBox .ProjInfo{
+  background-color: #333;
+  display: flex;
+  width: 100%;
+  height: 50%;
+  flex-direction: column;
+}
+.projectBox .ProjInfo a{
+  width: 90%;
+  height: 20px;
+  background-color: #f1f1f1;
+  text-decoration: none;
+  margin: 10px;
+  text-align: center;
+  border-radius: 5px;
+}
+@media (max-width: 576px){
+    nav ul{
+        position: absolute;
+        height: 150px;
+        width: 100%;
+        display: block;
+        top: 18px;
+        left: 0;
+        background-color: cadetblue;
+        text-align: center;
+        display: none;
+    }
+   
+    .container{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .box1{
+        width: 100%;
+        font-size: 15px;
+        padding: 15px;
+    
+    }
+    .box2{
+        width: 70%;
+        height: 20vh;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
