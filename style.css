@@ -99,7 +99,9 @@ body{
   text-decoration: none;
   margin: 10px;
   text-align: center;
-  border-radius: 5px; 
+  border-radius: 5px;
+  color: black;
+  
     
 }
 
@@ -198,6 +200,22 @@ body{
     padding: 30px;
     
 }
+.fa-brands{
+  color: black;
+  font-size: 30px;
+}
+p1{
+  font-size:x-large;
+  position: relative;
+  bottom: 60px;
+}
+
+.fa-sharpe {
+  position: relative;
+  top: 17px;
+  right: 162px;
+}
+
 .Box1 .i{
     font-size: 20px;
 }
