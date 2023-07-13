@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color:white;
 }
 body{
     display: flex;
@@ -35,6 +36,10 @@ body{
 .topnav {
   overflow: hidden;
   background-color: #333;
+  position: sticky;
+  top: 0 ;
+  z-index: 9999;
+  padding: 15px;
 }
 
  
@@ -47,6 +52,8 @@ body{
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
+  background-color: #333;
+
   
 }
 
@@ -55,12 +62,13 @@ body{
 .topnav a:hover {
   background-color: #ddd;
   color: black;
+  
 }
 
  
 
 .topnav a.active {
-  background-color: #04AA6D;
+  
   color: white;
 }
 
@@ -74,6 +82,7 @@ body{
 
 
 .container{
+  
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -90,29 +99,41 @@ body{
     height: 40vh;
     padding: 30px;
     margin: 20px;
+    position: relative;
+    top: 70px;
+   
+    
     
 }
+
+strong{
+  font-size: x-large;
+
+}
 .container .box1 a{
-  width: 90%;
+  width: 100%;
   height: 20px;
-  background-color: #f1f1f1;
+  
   text-decoration: none;
-  margin: 10px;
+  margin: 15px;
+  padding: 8px;
   text-align: center;
+  border: 2px solid black;
   border-radius: 5px;
   color: black;
+  box-shadow: 2px 2px 4px white;
   
     
 }
 
 .box2{
-
-    width: 20%;
-    height: 40vh;
-    border-radius: 50px;
-    padding: 40px;
-    margin: 40px;
-
+  width: 20%;
+  height: 40vh;
+  padding: 40px;
+  margin: 40px;
+  position: relative;
+  right: 150px;
+  bottom: 50px;
 }
 
  
@@ -139,6 +160,7 @@ body{
     display: block;
     text-align: left;
   }
+  
 }
 .aboutMe{
     display: flex;
@@ -148,12 +170,13 @@ body{
     width: 100%;
     height: 80vh;
     
+    
 }
 .aboutMe .heading{
-
     font-family: 'Fredericka the Great', cursive;
     font-size: 30px;
     margin: 20px;
+    
 
 }
 .aboutMe .box1{
@@ -184,6 +207,7 @@ body{
     width: 100%;
     height: 80vh;
     
+    
 }
 .contactUs .heading{
     font-family:'Fredericka the Great', cursive;
@@ -201,19 +225,19 @@ body{
     
 }
 .fa-brands{
-  color: black;
-  font-size: 30px;
+    color: black;
+    font-size: 30px;
 }
 p1{
-  font-size:x-large;
-  position: relative;
-  bottom: 60px;
+    font-size:x-large;
+    position: relative;
+    bottom: 60px;
 }
 
 .fa-sharpe {
-  position: relative;
-  top: 17px;
-  right: 162px;
+    position: relative;
+    top: 17px;
+    right: 162px;
 }
 
 .Box1 .i{
@@ -247,6 +271,7 @@ p1{
   flex-wrap: wrap;
   overflow: scroll;
   justify-content: center;
+  
 }
 .containerProjects .projectBox{
   background-color: red;
@@ -296,27 +321,43 @@ p1{
         display: none;
     }
    
-    .container{
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        margin-top: 90px;
-        padding: 30px;
+  .container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 90px;
+    padding: 30px;
      
-      
+  }
+  .box1{
+    width: 65%;
+    padding: 5px;
+    color: white ;
+    position: relative;
+    top: -10px;
+    right: 70px;
+    }
+  .box2{
+    width: 65%;
+    padding: 40px;
+    position: relative;
+    top: -270px;
+    left: 110px;
+    }
+  .aboutMe{
+    display: grid;
+    position: relative;
+    left: 60px;
+    top: -190px;
+    width: 100%;
+    height: 100vh;
+    color: white;
+    }
+    #Aboutme-header{
+      position: relative;
+      right: 40px;
+    }
 
-    }
-    .box1{
-        width: 100%;
-        font-size: 15px;
-        
-        
-    
-    }
-    .box2{
-        width: 70%;
-        height: 60vh;
-    }
 }
 
 
